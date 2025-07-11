@@ -112,7 +112,7 @@ async function init() {
     const randomIndices = [];
     while (randomIndices.length < 3) {
         const randomIndex = Math.floor(Math.random() * dinoObjects.length );
-        if (!randomIndices.includes(randomIndex) || !dinoObjects[randomIndex].species.toLowerCase() === 'pigeon') {
+        if (!randomIndices.includes(randomIndex) && dinoObjects[randomIndex].species.toLowerCase() != 'pigeon') {
             randomIndices.push(randomIndex);
         }
     }
