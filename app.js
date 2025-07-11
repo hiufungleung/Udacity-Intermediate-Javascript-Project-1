@@ -144,6 +144,6 @@ async function init() {
 }
 
 // On button click, prepare and display infographic
-document.getElementById('btn').addEventListener('click', () => {
-    init();
+document.getElementById('btn').addEventListener('click', async () => {
+    await init();
 });
